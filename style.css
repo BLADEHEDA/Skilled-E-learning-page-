@@ -1,0 +1,216 @@
+:root {
+    /* primary */
+    --dark-blue: hsla(234, 53%, 16%, 1);
+    --pink: hsla(341, 92%, 62%, 1);
+    --light-pink: hsla(341, 100%, 83%, 1);
+    --purple: hsla(261, 75%, 58%, 1);
+    /* neutral */
+    --gray: hsla(233, 10%, 56%, 1);
+    --blue-gray: hsla(234, 25%, 52%, 1);
+    --white: hsla(0, 0%, 100%, 1);
+  }
+body{
+    box-sizing: border-box;
+    height:100%;
+    overflow-x: hidden;
+
+
+}
+main{
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+}
+
+#footer{
+    background: hsla(234, 53%, 16%, 1);
+    padding-right: 8rem;
+    padding-left: 9rem;
+
+}  
+#nav{
+    padding-right: 5rem;
+} 
+.footer,.nav{
+    display: flex;
+    padding:1.5em;
+    /* border:solid 1px black; */
+padding-left: 3em;;
+}
+.image{
+    flex: 1;
+}
+
+#image1{
+    width: 100px;
+}
+.button{
+    border: none;;
+    padding:5px 10px 5px 10px;
+    border-radius: 20px;
+}
+#button1{
+  background: hsla(234, 53%, 16%, 1) ; 
+  color:hsla(0, 0%, 100%, 1);
+}
+#button2{
+
+    color:hsla(0, 0%, 100%, 1);
+    background: linear-gradient(180deg, #FF6F48 0.04%, #F02AA6 100%);
+  
+}
+#button3{
+   background: linear-gradient(180deg, #4851FF 0%, #F02AA6 99.92%);
+}
+.header{
+    font-weight:bold;
+    line-height: 1em;
+    margin-bottom: .5em;
+}
+.content{
+    font-size: 14px;
+    color:hsla(234, 53%, 16%, 1);
+     padding-right: 6rem;
+     margin-bottom: 2em;
+  
+}
+
+.row{
+ 
+    margin-top: 6em;
+}
+.hero1{
+  max-height:40em; 
+    position: absolute;
+     top:-18em;
+    left:4em;
+} 
+.hero2{
+    display: none;
+}
+.hero3{
+    display: none;
+}
+#containerx{
+
+    padding-left: 5rem;
+    padding-right: 4rem;
+}
+#row{
+    margin-top: 10em;
+    margin-bottom: 5em;
+}
+
+.cards{
+
+    font-size: 15px;
+    border-radius: 10px;
+    background:  hsla(0, 0%, 100%, 1);;
+    height: 200px; 
+    padding-left: 1.5em;
+  padding-right: 1.5em;
+    margin-top: 3em;
+    box-shadow: 0rem 1.5625rem 3.125rem rgba(6, 22, 141, 0.0442381);
+
+}
+.heading{
+    font-weight: bold;
+}
+#class-heading{
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    color:hsla(0, 0%, 100%, 1);
+    padding-right: 2em;
+    padding-top: 0.5em;
+}
+.icon{
+    height: 50px;
+    position: relative;
+    top:-2em;
+}
+.link{
+    color:
+    var(--pink);
+}
+/* let me redesign the various designs for the various layouts . TABLET */
+@media(max-width: 992px ){
+ body{
+  overflow-x: hidden;
+   } 
+   .hero1{
+      display: none;
+  } 
+  .hero2{
+    max-height:41em;
+    display: block;
+    position: absolute;
+     top:-28em;
+    left:23em;
+  }
+   #footer{
+    padding-right: 3rem;
+    padding-left: 3rem;
+
+}  
+#nav{
+    padding-right: 2rem;
+} 
+.footer,.nav{
+    display: flex;
+    padding:1em;
+padding-left: 1em;;
+}
+#button1{
+    margin-right: 1rem;
+  }
+
+#containerx{
+
+    padding-left: 0rem;
+    padding-right: 0em;
+    margin-left: 0rem;
+}
+.content{
+     padding-right: 0rem;
+}
+.cards{
+
+    font-size: 15px;
+    height: 250px; 
+    padding-left: 1em;
+   /* padding-right: 2em; */
+
+}
+.heading{
+    font-weight: bolder;
+}
+#class-heading{
+
+    padding-right: 0em;
+    padding-top: 0.7em;
+    font-size: 25px;
+    /* margin-top:45px; */
+}
+
+.row{
+ 
+    margin-top: 20em;
+}
+     
+}
+/* lets desugn the mobile view of the page  */
+
+@media  (max-width:480px) {
+    /* body{
+        display: none;
+    } */
+    .hero3{
+        display: block;
+    }
+    .hero1{
+        display: none;
+      } 
+      .hero2{
+          display: none;
+      }
+      #nav{
+       margin-right: -4rem;
+    } 
+}
